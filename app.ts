@@ -5,7 +5,7 @@ type user={
     fullName: string;
     address: string;
     userName: string;
-    age:number
+    age?:number 
 }
 
 
@@ -14,8 +14,7 @@ let user1 : user = {
     fullName: 'Jhon Doe',
     address: 'Pune',
     userName: 'Jhon',
-    age: 24
-
+    
 }
 
 let user2 : user= {
@@ -40,7 +39,7 @@ let ages: Array<number>= [12, 13, 14, 15, 16, 17, 18]
 type person = {
   name: string;
   age: number;
-  isStudent: boolean;
+  isStudent: boolean | null
 };
 
 const person1:person= {
@@ -95,4 +94,76 @@ const mobile2 :mobile= {
   model: "Galaxy S24",
   price: 75000,
 };
+
+
+//6
+type product = {
+  id: number;
+  name: string;
+  price: number;
+  inStock: boolean;
+  tags: string[]
+};
+
+const product1: product= {
+  id: 101,
+  name: "Laptop",
+  price: 79999,
+  inStock: true,
+  tags: ["electronics", "computer"],
+};
+
+
+//7
+type student ={
+    id: number;
+    name: string;
+    age:number;
+    isPassed: boolean;
+}
+
+const student1: student= {
+  id: 1,
+  name: "Aman",
+  age: 20,
+  isPassed: true,
+};
+
+
+//8
+
+type users= {
+  name: string;
+  email: string | null,
+};
+
+const users1:users = {
+  name: "Rahul",
+  email: null,
+};
+
+
+//9
+type employee = {
+  id: number;
+  salary: number | null,
+};
+
+const employee1: employee = {
+  id: 101,
+  salary: 100000
+};
+
+//10
+
+type order = {
+  orderId: string;
+  coupon: number | null;
+};
+
+const order1:order = {
+  orderId: "ORD101",
+  coupon: null,
+};
+
 
